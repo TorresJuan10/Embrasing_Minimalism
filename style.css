@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+/* Box-shadow */
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --color-primario: #FAFAF9;
+    --color-titulo: #20293A;
+    --color-parrafo: #6C727F;
+    --color-bg-boton: #E6D6FC;
+    --color-font-boton: #883AE1;
+    --color-bg-body: #E5EAF0;
+
+    --sora: font-family: "Sora", sans-serif;
+
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--color-bg-body);
+}
+
+.img{
+    width: 100%;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.boton {
+    border-radius: 1rem;
+    border: none;
+    width: 4rem;
+    background-color: var(--color-bg-boton);
+    color: var(--color-font-boton);
+    border: none;
+}
+
+.titulo {
+    font-family: var(--sora);
+    font-size: 1.12rem;
+}
+.descripcion {
+    font-size: 0.875rem;
+}
+
+.autor{
+    font-size: 0.875rem;
+}
+
+.card {
+    background-color: var(--color-primario);
+    width: 336px;
+    margin-top: 10.25rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+
+@media (max-width: 640px){
+    .card {
+        margin-bottom: 10.25rem ;
+    }
+}
+
+
